@@ -1,35 +1,44 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Две колонки</title>
-  <style type="text/css">
-   #container {
-    width: 800px; /* Общая ширина макета */
-    margin: 0 auto; /* Выравниваем по центру */
-   }
-   #leftcol {
-    float: left;
-    background: #f0f0f0;
-    width: 600px;
-   }
-   #rightcol {
-    float: left;
-    background: #fc0;
-    width: 200px;
-   }
-   .clear {
-    clear: left;
-   }
-  </style>
+  <meta charset="utf-8">
+  <title>Рецепты от Миранды</title>
+  <link href="style/layout03.css" rel="stylesheet">
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
  </head>
  <body>
   <div id="container">
-    <div id="leftcol">Левая колонка</div>
-    <div id="rightcol">Правая колонка</div>
-    <div class="clear"></div>
-    <p>Текст</p>
+   <header><h1>Рецепты от Миранды</h1></header>
+   <article>
+    <h2>Рома!</h2>
+    <p>Очистить от ядрышек 2 кг. грецких орехов. Растолочь скорлупу и смешать с фруктами
+    в 2 литрах рома. Употреблять 3–4 раза в день.</p>
+    <h2>Кровавая Мери</h2>
+    <p>Влить в бокал хорошую 100% кровь по лезвию ножа. Влить водку &laquo;Смирновскую&raquo;.
+    Пить залпом.</p>
+    <h2>Грог по-рыбацки</h2>
+    <p>1 рыбу залить кипятком, через 5 минут процедить и добавить грога. Подавать в чашках.</p>
+    <h2>Хвангур</h2>
+    <p>Сварить на медленном огне воду. Добавить в нее хлива и хрольва. Довести до кипения.</p>
+    <h2>Царская водка</h2>
+    <p>Смешать 2 части соляной кислоты и 1 часть азотной со льдом. Слить охлажденную смесь 
+    в фужер. Пить залпом.</p>
+    <h2>HotDog</h2>
+    <p>Тщательно промойте косточки и сварите из них бульон. Подавать горячим.</p>
+    <h2>Fireball</h2>
+    <p>В большой бокал положить лед, вылить на него все компоненты и положить кружок лимона.</p>
+   </article>
+   <nav>
+    <p><a href="popular.html">Популярные рецепты</a></p>
+    <p><a href="day.html">Рецепт дня</a></p>
+    <p><a href="apple.html">Рецепты на основе яблок</a></p>
+    <p><a href="ice.html">Рецепты на основе льда</a></p>
+    <p><a href="hliv.html">Рецепты из хлива и хрольва</a></p>
+   </nav>
+   <div class="clear"></div>
+   <footer>&copy; Влад Мержевич</footer>
   </div>
  </body>
 </html>
