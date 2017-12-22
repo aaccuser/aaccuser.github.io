@@ -1,41 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-	<title></title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-
-<div class="wrapper">
-
-	<header class="header”>
-		       <center>AACC</center>
-	</header><!-- .header-->
-
-	<div class="middle">
-
-		<div class="container">
-			<main class="content">
-				<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
-			</main><!-- .content -->
-		</div><!-- .container-->
-
-		<aside class="right-sidebar">
-			<strong>Right Sidebar:</strong> Integer velit. Vestibulum nisi nunc, accumsan ut, vehicula sit amet, porta a, mi. Nam nisl tellus, placerat eget, posuere eget, egestas eget, dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elementum urna a eros. Integer iaculis. Maecenas vel elit.
-		</aside><!-- .right-sidebar -->
-
-	</div><!-- .middle-->
-
-</div><!-- .wrapper -->
-
-<footer class="footer">
-	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
-</footer><!-- .footer -->
-
-</body>
+YPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Трехколоночный макет</title>
+  <style type="text/css">
+   body {
+    font: 0.8em Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+    background: #D7E1F2; /* Цвет фона */
+    color: #ffe; /* Цвет текста */
+   }
+   a { color: #008BCE; /* Цвет ссылок */ }
+   #container {
+    width: 500px; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+    background: #FCE600; /* Цвет колонок */
+   }
+   #header { 
+    font-size: 2.2em; /* Размер текста */
+    text-align: center; /* Выравнивание по центру */
+    padding: 5px; /* Отступы вокруг текста */
+    background: #D71920; /* Цвет фона шапки */
+   }
+   #nav, #aside {
+    float: left; width: 110px; padding: 5px;
+   }
+   #content {
+    background: #54B948;
+    margin: 0 120px; /* Ширина колонок */
+    padding: 10px;
+   }
+   #aside {
+    float: right; color: #000;
+   }
+   h2 { margin: 0 0 1em; }
+   #footer { 
+    clear: both; /* Отменяем действие float */
+    padding: 5px; /* Отступы вокруг текста */
+    background: #D71920; /* Цвет фона подвала */
+   }
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">Исторический турнир</div>
+   <div id="nav">
+    <p><a href="stat.html">Статистика турнира</a></p>
+    <p><a href="interview.html">Интервью с главным судьей</a></p>
+    <p><a href="ask.html">Конкурсные вопросы</a></p>
+   </div>
+   <div id="aside">
+    <h3>Статистика</h3>
+    <p>одиннадцать человек дошли до финала;</p>
+    <p>один человек правильно указал в каком стиле писал Диего Веласкес;</p>
+    <p>только один человек знал, кто изобрел пароход;</p>
+   </div> 
+   <div id="content"> 
+   <h2>Опрос общественного мнения показал</h2>
+    <ul>
+     <li>что пароход изобретен: Петром I, А. Эйнштейном и А. Поповым;</li>
+     <li>Диего Веласкес писал свои полотна в стиле: империализма, кубизма 
+     и империосионизма;</li>
+     <li>Фаросский маяк находится в Фаросе;</li>
+     <li>конфуцианство возникло в: Италии, Корее и Франции;</li>
+     <li>богами торговли и воровства в Древней Греции были: Марс, Меркурий 
+     и Дионис;</li>
+     <li>Франция – это город;</li>
+     <li>богами загробного мира в Египте были: Аид, Анубис и Ассирис;</li>
+     <li>столица Золотой Орды — Монголия;</li>
+     <li>главные противники Александра Македонского: татаро-монголы, Дедал 
+     и Цезарь;</li>
+    </ul>
+   </div>
+   <div id="footer">&copy; Влад Мержевич</div>
+  </div>
+ </body>
 </html>
