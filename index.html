@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Рецепты от Миранды</title>
-  <link href="style/style.css" rel="stylesheet">
-  
-  <style>
-       {
-font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+  <style type="text/css">
+   body {
+    font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
     background: #54463d; /* Цвет фона */
     margin: 0; /* Убираем отступы */
    }
-
    h2 {
     font-size: 1.1em; /* Размер шрифта */
     color: #752641; /* Цвет текста */
@@ -24,7 +22,7 @@ font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-страни�
    }
    #header {
     background: #8fa09b; /* Цвет фона */
-    fon</style>t-size: 24pt; /* Размер текста */
+    font-size: 24pt; /* Размер текста */
     font-weight: bold; /* Жирное начертание */
     color: #edeed5; /* Цвет текста */
     padding: 5px; /* Отступы вокруг текста */
@@ -36,7 +34,6 @@ font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-страни�
     border-right: 1px dashed #183533; /* Линия справа */
     background: #fff; /* Цвет фона левой колонки */
    }
-   
    #content p {
     margin-top: 0.3em /* Отступ сверху */
    }
@@ -53,16 +50,12 @@ font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-страни�
    .clear { 
     clear: both; /* Отмена обтекания */ 
    }
-   
   </style>
-  <!--[if IE]>
-   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
  </head>
  <body>
   <div id="container">
-   <header><h1>Рецепты от Миранды</h1></header>
-   <article>
+   <div id="header">Рецепты от Миранды</div>
+   <div id="content">
     <h2>Рома!</h2>
     <p>Очистить от ядрышек 2 кг. грецких орехов. Растолочь скорлупу и смешать с фруктами
     в 2 литрах рома. Употреблять 3–4 раза в день.</p>
@@ -80,16 +73,16 @@ font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-страни�
     <p>Тщательно промойте косточки и сварите из них бульон. Подавать горячим.</p>
     <h2>Fireball</h2>
     <p>В большой бокал положить лед, вылить на него все компоненты и положить кружок лимона.</p>
-   </article>
-   <nav>
+   </div>
+   <div id="sidebar">
     <p><a href="popular.html">Популярные рецепты</a></p>
     <p><a href="day.html">Рецепт дня</a></p>
     <p><a href="apple.html">Рецепты на основе яблок</a></p>
     <p><a href="ice.html">Рецепты на основе льда</a></p>
     <p><a href="hliv.html">Рецепты из хлива и хрольва</a></p>
-   </nav>
+   </div>
    <div class="clear"></div>
-   <footer>&copy; Влад Мержевич</footer>
+   <div id="footer">&copy; Влад Мержевич</div>
   </div>
  </body>
 </html>
