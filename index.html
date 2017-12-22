@@ -7,7 +7,7 @@
   <style type="text/css">
    body {
     font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
-    background: #54463d; /* Цвет фона */
+    background: #fff; /* Цвет фона */
     margin: 0; /* Убираем отступы */
    }
    h2 {
@@ -18,7 +18,7 @@
    #container {
     width: 500px; /* Ширина макета */
     margin: 0 auto; /* Выравниваем по центру */
-    background: #f0f0f0; /* Цвет фона правой колонки */ 
+    position: relative; /* Относительное позиционирование */
    }
    #header {
     background: #8fa09b; /* Цвет фона */
@@ -28,27 +28,23 @@
     padding: 5px; /* Отступы вокруг текста */
    }
    #content {
-    float: left; /* Обтекание по правому краю */
-    width: 329px; /* Ширина левой колонки */
+    margin-right: 130px; /* Отступ справа */
     padding: 10px; /* Поля вокруг текста */
     border-right: 1px dashed #183533; /* Линия справа */
-    background: #fff; /* Цвет фона левой колонки */
    }
    #content p {
     margin-top: 0.3em /* Отступ сверху */
    }
    #sidebar {
-    float: left; /* Обтекание по правому краю */
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0; /* Положение от правого края */
+    top: 60px; /* Положение от верхнего края */
     width: 120px; /* Ширина */
-    padding: 10px; /* Отступы вокруг текста */
    }
    #footer {
     background: #8fa09b; /* Цвет фона */
     color: #fff; /* Цвет текста */
     padding: 5px; /* Отступы вокруг текста */
-   }
-   .clear { 
-    clear: both; /* Отмена обтекания */ 
    }
   </style>
  </head>
@@ -81,7 +77,6 @@
     <p><a href="ice.html">Рецепты на основе льда</a></p>
     <p><a href="hliv.html">Рецепты из хлива и хрольва</a></p>
    </div>
-   <div class="clear"></div>
    <div id="footer">&copy; Влад Мержевич</div>
   </div>
  </body>
