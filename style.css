@@ -1,47 +1,117 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
-    background: #54463d; /* Цвет фона */
-    margin: 0; /* Убираем отступы */
-   }
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
 
-   h2 {
-    font-size: 1.1em; /* Размер шрифта */
-    color: #752641; /* Цвет текста */
-    margin-bottom: 0; /* Отступ снизу */
-   }
-   #container {
-    width: 500px; /* Ширина макета */
-    margin: 0 auto; /* Выравниваем по центру */
-    background: #f0f0f0; /* Цвет фона правой колонки */ 
-   }
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+}
+.wrapper {
+	min-width: 1000px;
+	max-width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
 
-   #header {
-    background: #8fa09b; /* Цвет фона */
-    font-size: 24pt; /* Размер текста */
-    font-weight: bold; /* Жирное начертание */
-    color: #edeed5; /* Цвет текста */
-    padding: 5px; /* Отступы вокруг текста */
-   }
-   #content {
-    float: left; /* Обтекание по правому краю */
-    width: 329px; /* Ширина левой колонки */
-    padding: 10px; /* Поля вокруг текста */
-    border-right: 1px dashed #183533; /* Линия справа */
-    background: #fff; /* Цвет фона левой колонки */
-   }
-   #content p {
-    margin-top: 0.3em /* Отступ сверху */
-   }
-   #sidebar {
-    float: left; /* Обтекание по правому краю */
-    width: 120px; /* Ширина */
-    padding: 10px; /* Отступы вокруг текста */
-   }
-   #footer {
-    background: #8fa09b; /* Цвет фона */
-    color: #fff; /* Цвет текста */
-    padding: 5px; /* Отступы вокруг текста */
-   }
-   .clear { 
-    clear: both; /* Отмена обтекания */ 
-   }
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 70px;
+	background: #FFE680;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 0 0 50px;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 120px 0 0;
+}
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.right-sidebar {
+	float: left;
+	width: 100px;
+	margin-left: -100px;
+	position: relative;
+	background: #FFACAA;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -50px auto 0;
+	min-width: 1000px;
+	max-width: 1200px;
+	height: 50px;
+	background: #BFF08E;
+	position: relative;
+}
