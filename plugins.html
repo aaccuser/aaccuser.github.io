@@ -4,6 +4,23 @@
   <meta charset="utf-8">
   <title>AACC - Плагины</title>
   <style>
+
+  .column {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+   }
+
+
    body {
     font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
     margin: 0; /* Отступы на странице */
@@ -51,15 +68,34 @@
   </div>
   <div id="content">
     <h2>Страница #1</h2>
-    <p>
+ <div class="column">
 
-<p><a href="chest-commands.html">Chest Commands</a></p>
+<p>
 
-<p><a href="vault.html">Vault</a></p>
+<a href="chest-commands.html">Chest Commands</a>
 
-<p><a href="World-Edit.html">World-Edit</a></p>
+<a href="vault.html">Vault</a>
 
-<p><a href="World-Guard.html">World Guard</p>
+<a href="World-Edit.html">World-Edit</a>
+
+<a href="World-Guard.html">World Guard</a>
+
+</p>
+
+<p>
+
+<a href="chest-commands.html">Chest Commands</a>
+
+<a href="vault.html">Vault</a>
+
+<a href="World-Edit.html">World-Edit</a>
+
+<a href="World-Guard.html">World Guard</a>
+
+</p>
+
+  </div>
+
   </div>
   <div id="footer">&copy; AACC.ml</div>
  </body>
