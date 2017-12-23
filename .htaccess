@@ -1,2 +1,2 @@
-ErrorDocument 404 /err404.html
 
+ErrorDocument 404 http://www.aacc.ml/404.html
