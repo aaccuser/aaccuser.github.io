@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; }
+body { background: #1abc9c; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+
+
 header {
     text-align: justify;
     height: 8em;
@@ -22,4 +27,5 @@ margin: 0;
     background-color: #1abc9c; /* Цвет фона */
 margin: 0;
 }
+
 
