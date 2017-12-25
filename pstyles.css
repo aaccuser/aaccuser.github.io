@@ -80,3 +80,11 @@ header nav a:last-child {
     padding: 3px; /* Поля вокруг текста */
    }
 
+   #content { /* Основное содержание страницы */
+    /* Цвет фона */
+    height: 675px;
+    background-image: url(.jpg); /* Путь к фоновому изображению */
+    background-color: #F5F5DC; /* Цвет фона */
+
+}
+
