@@ -2,53 +2,17 @@
 * { padding: 0; margin: 0; }
 body { background: #1abc9c; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
  
-header {
-    text-align: justify;
-    height: 4em;
-    padding: 2em 5%;
-    background: #2c3e50;
-    color: #e3e8cc;
- 
-header > div {
+header h1 {
     height: 100%;
 }
  
-header > div::before {
+header h1::before {
     content: '';
+    display: inline-block;
+    vertical-align: middle;  
     height: 100%;
-}
- 
-header > div h1 {
-    font-size: 3em;
-    font-style: italic;
-}
- 
-header nav a {
-    padding: 0 0.6em;
-    white-space: nowrap;
-}
- 
-header nav a:last-child {
-    padding-right: 0;
-}
- 
-@media screen and (max-width: 720px){
-     
-    header {
-        height: auto;
-    }
-     
-    header > div,
-    header > div h1,
-    header nav {
-        height: 4em;
-        width: auto;
-        display: block;
-        text-align: center;
-    }
-     
-}
 
+}
 
  footer { /* Нижняя часть */
     background: #e3e8cc; /* Цвет фона */
