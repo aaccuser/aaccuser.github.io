@@ -57,7 +57,7 @@ header nav a:last-child {
     header > div,
     header > div h1,
     header nav {
-        height: auto;
+        height: 4em;
         width: auto;
         display: block;
         text-align: center;
