@@ -7,23 +7,7 @@ header {
     height: 4em;
     padding: 2em 5%;
     background: #2c3e50;
-    color: #fff;
-}
- 
-header::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
- 
-header > div,
-header > div::before,
-header nav,
-header > div h1 {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-}
+    color: #e3e8cc;
  
 header > div {
     height: 100%;
