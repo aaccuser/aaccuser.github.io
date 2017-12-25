@@ -1,15 +1,12 @@
 
  
-header h1 {
-    height: 100%;
-}
- 
-header h1::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;  
-    height: 100%;
-
+header {
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 2em 10%;
+    background: #2c3e50;
+    color: #fff;
 }
 
  footer { /* Нижняя часть */
