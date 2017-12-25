@@ -66,9 +66,17 @@ header nav a:last-child {
 }
 
 
-footer {
-    text-align: justify;
-    height: 4em;
-    padding: 2em 5%;
-    background: #2c3e50;
-    color: #fff;
+ footer { /* Нижняя часть */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    font-size: 90%; /* Размер шрифта */
+    padding: 3px; /* Поля вокруг текста */
+   }
+
+ #footer { /* Нижняя часть */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    font-size: 90%; /* Размер шрифта */
+    padding: 3px; /* Поля вокруг текста */
+   }
+
