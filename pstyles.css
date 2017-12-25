@@ -1,7 +1,7 @@
 header {
     text-align: justify;
     height: 8em;
-    padding: 2em 5%;
+   
     background: #2c3e50;
     color: #fff;
 }
@@ -9,13 +9,12 @@ header {
 
  footer { /* Нижняя часть */
     background: #2c3e50; /* Цвет фона */
-    border: solid 1px black; /* Параметры рамки */
+    height: 4;
     font-size: 90%; /* Размер шрифта */
     padding: 3px; /* Поля вокруг текста */
    }
 
    #content { /* Основное содержание страницы */
-    /* Цвет фона */
     height: 675px;
     background-image: url(.jpg); /* Путь к фоновому изображению */
     background-color: #1abc9c; /* Цвет фона */
