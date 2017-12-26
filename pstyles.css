@@ -43,8 +43,8 @@ margin: 0;
   padding: 1em;
   display: block;
   color: #FFF;
-  border-right: 100px solid #FF0;
-  background: rgba(186, 215, 139, .3);
+  border-right: solid #FF0;
+  backgroung-color: #FF0;
 }
 .three a:hover {background: #BAD78B}
 .four ul {
