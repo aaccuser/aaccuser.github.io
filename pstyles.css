@@ -4,7 +4,7 @@ body { background: ; font-family: 'Lato', sans-serif; text-transform: uppercase;
 
 
 header {
-    text-align: justify;
+    text-align: center;
     height: 3em;
     padding: 1em 5%;
     background: #2c3e50;
@@ -13,8 +13,6 @@ header {
 }
 
 
-    header {
-        height: auto;
     }
      
     header > div,
@@ -24,10 +22,7 @@ header {
         width: auto;
         display: block;
         text-align: center;
-    }
-     
 }
-
 
  footer { /* Нижняя часть */
     background: #2c3e50; /* Цвет фона */
