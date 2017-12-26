@@ -42,7 +42,7 @@ margin: 0;
 .three a {
   padding: 1em;
   display: block;
-  color: #74924C;
+  color: #FFF;
   border-right: 1px solid #BAD78B;
   background: rgba(186, 215, 139, .3);
 }
@@ -50,7 +50,7 @@ margin: 0;
 .four ul {
   display: -webkit-flex; 
   display: flex;
-  background: #FFD7A7;
+  background: #F7F7F7;
   padding-left: 0;
 }
 
