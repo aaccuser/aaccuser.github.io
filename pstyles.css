@@ -13,16 +13,6 @@ header {
 }
 
 
-    }
-     
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
-}
 
  footer { /* Нижняя часть */
     background: #2c3e50; /* Цвет фона */
