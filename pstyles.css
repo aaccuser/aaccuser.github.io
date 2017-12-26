@@ -1,66 +1,39 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
-* { padding: 0; margin: 0; }
-body { background: #1abc9c; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
- 
-header {
-    text-align: justify;
-    height: 8em;
-    padding: 2em 5%;
-    background: #2c3e50;
-    color: #fff;
+@import url(https://fonts.googleapis.com/css?family=Lora);
+body {margin:0;}
+h2 {
+  font-family: monospace;
+  color: #606060;
 }
- 
-header::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
+ul {
+  list-style: none; 
+  margin: 0 auto;
 }
- 
-header > div,
-header > div::before,
-header nav,
-header > div h1 {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
+a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
 }
- 
-header > div {
-    height: 100%;
+i {
+  margin-right: 10px;
 }
- 
-header > div::before {
-    content: '';
-    height: 100%;
+nav {
+  display: block;
+  width: 660px;
+  margin: 0 auto 30px;
 }
- 
-header > div h1 {
-    font-size: 3em;
-    font-style: italic;
+
+.three ul {
+  padding: 0;
+  background: #E4EFD1;
 }
- 
-header nav a {
-    padding: 0 0.6em;
-    white-space: nowrap;
+.three li {
+  display: inline-block;
 }
- 
-header nav a:last-child {
-    padding-right: 0;
+.three a {
+  padding: 1em;
+  display: block;
+  color: #74924C;
+  border-right: 1px solid #BAD78B;
+  background: rgba(186, 215, 139, .3);
 }
- 
-@media screen and (max-width: 720px){
-     
-    header {
-        height: auto;
-    }
-     
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
-    }
-     
-}
+.three a:hover {background: #BAD78B}
