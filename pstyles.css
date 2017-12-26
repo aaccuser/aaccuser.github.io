@@ -52,3 +52,10 @@ margin: 0;
   background: rgba(255, 255, 0, .3);
 }
 .three a:hover {background: #BAD78B
+
+
+
+
+  body {
+    font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+    margin: 0; /* Отступы на странице */
