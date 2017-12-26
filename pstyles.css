@@ -43,7 +43,7 @@ margin: 0;
   padding: 1em;
   display: block;
   color: #FFF;
-  border-right: 1px solid #FF0;
+  border-right:  solid #FF0;
   background: rgba(186, 215, 139, .3);
 }
 .three a:hover {background: #BAD78B}
