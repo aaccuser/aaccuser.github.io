@@ -1,37 +1,38 @@
-@ .two a {
-  display: block;
-  padding: 1em;
-  border-right: 1px solid #ADC0CE;
-  background: rgba(173, 192, 206, .3);
-  color: #29838C;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; }
+body { background: ; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+
+
+header {
+    text-align: center;
+    height: 3em;
+    padding: 1em 5%;
+    background: #2c3e50;
+    color: #fff;
+    margin: 0;
 }
-.two a:hover {background: #ADC0CE}
-.three ul {
-  padding: 0;
-  background: #E4EFD1;
+    
+   form {
+     padding: 0 0.6em;
+    white-space: nowrap;
+ 
 }
-.three li {
-  display: inline-block;
+
+
+
+ footer { /* Нижняя часть */
+    background: #2c3e50; /* Цвет фона */
+    height: 4;
+    font-size: 90%; /* Размер шрифта */
+    padding: 3px; /* Поля вокруг текста */
+margin: 0;
+   }
+
+   #content { /* Основное содержание страницы */
+    height: 675px;
+    background-image: url(.jpg); /* Путь к фоновому изображению */
+    background-color: #1abc9c; /* Цвет фона */
+margin: 0;
 }
-.three a {
-  padding: 1em;
-  display: block;
-  color: #74924C;
-  border-right: 1px solid #BAD78B;
-  background: rgba(186, 215, 139, .3);
-}
-.three a:hover {background: #BAD78B}
-.four ul {
-  display: -webkit-flex; 
-  display: flex;
-  background: #FFD7A7;
-  padding-left: 0;
-}
-.four a {
-  padding: 1em;
-  display: block;
-  color: #9B4222;
-  border-right: 1px solid #FFAB51;
-  background: rgba(255, 171, 81, .3);
-}
-.four a:hover {background: #FFAB51}
+
+
