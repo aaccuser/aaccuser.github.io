@@ -11,17 +11,11 @@ header {
     color: #fff;
     margin: 0;
 }
-
-    {
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
-    }
-     
+    
+   form {
+     padding: 0 0.6em;
+    white-space: nowrap;
+ 
 }
 
 
