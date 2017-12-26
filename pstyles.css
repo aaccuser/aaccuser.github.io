@@ -40,10 +40,10 @@ margin: 0;
   display: inline-block;
 }
 .three a {
-  padding: 2em;
+  padding: 1em;
   display: block;
   color: #FFF;
-  border-right: 1px solid #BAD78B;
+  border-right: #BAD78B;
   background: rgba(186, 215, 139, .3);
 }
 .three a:hover {background: #BAD78B}
