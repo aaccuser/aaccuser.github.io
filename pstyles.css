@@ -22,6 +22,7 @@ header {
 
  footer { /* Нижняя часть */
     background: #2c3e50; /* Цвет фона */
+    color: #FFF
     height: 4;
     font-size: 90%; /* Размер шрифта */
     padding: 3px; /* Поля вокруг текста */
