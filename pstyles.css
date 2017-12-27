@@ -21,14 +21,12 @@ header {
 
 
  footer { /* Нижняя часть */
-position: fixed; /* Фиксированное положение 
-    background: #2c3e50; /* Цвет фона */
-    color: #FFF
-    height: 4;
-    font-size: 90%; /* Размер шрифта */
-    padding: 3px; /* Поля вокруг текста */
-margin: 0;
-   }
+  position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
 
    #content { /* Основное содержание страницы */
     height: 675px;
