@@ -22,6 +22,7 @@ header {
 }
 
    #content { /* Основное содержание страницы */
+  font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */ }
     height: 675px;
     background-image: url(.jpg); /* Путь к фоновому изображению */
     background-color: #fff; /* Цвет фона */
