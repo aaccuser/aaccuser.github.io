@@ -12,14 +12,6 @@ header {
     margin: 0;
 }
     
-   form {
-     padding: 0 0.6em;
-    white-space: nowrap;
- 
-}
-
-
-
  footer { /* Нижняя часть */
   position: fixed; /* Фиксированное положение */
     left: 0; bottom: 0; /* Левый нижний угол */
@@ -27,7 +19,6 @@ header {
     background: #39b54a; /* Цвет фона */
     color: #fff; /* Цвет текста */
     width: 100%; /* Ширина слоя */
-
 }
 
    #content { /* Основное содержание страницы */
@@ -36,7 +27,6 @@ header {
     background-color: #fff; /* Цвет фона */
 margin: 0;
 }
-
 
 .three ul {
   padding: 0;
@@ -60,7 +50,7 @@ p {
    }
 
   body {
-    font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+    font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */ }
    
 
 
