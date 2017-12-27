@@ -32,7 +32,7 @@ margin: 0;
    #content { /* Основное содержание страницы */
     height: 675px;
     background-image: url(.jpg); /* Путь к фоновому изображению */
-    background-color: #1abc9c; /* Цвет фона */
+    background-color: #fff; /* Цвет фона */
 margin: 0;
 }
 
