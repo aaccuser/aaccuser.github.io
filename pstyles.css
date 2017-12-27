@@ -28,6 +28,8 @@ header {
     color: #fff; /* Цвет текста */
     width: 100%; /* Ширина слоя */
 
+}
+
    #content { /* Основное содержание страницы */
     height: 675px;
     background-image: url(.jpg); /* Путь к фоновому изображению */
