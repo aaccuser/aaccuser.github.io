@@ -46,14 +46,6 @@ margin: 0;
 .three a:hover {background: #BAD78B
 }
 
-p {
-    text-indent: 45px; /* Отступ первой строки в пикселах */
-   }
-h2 {
-    text-indent: 30px; /* Отступ первой строки в пикселах */
-
-h3  {
-    text-indent: 45px; /* Отступ первой строки в пикселах */
 
   body {
     font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */ }
