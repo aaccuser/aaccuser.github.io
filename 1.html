@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-<link href="pstyles.css" rel="stylesheet">
-  <title>header</title>
- </head> 
- <body>
-  <header>
-    <h1>Super Bad</h1>
-    <nav><a>First Link</a><a>Second Link</a><a>Third Link</a></nav>
-</header>
-
- <div id="content">
-
-    <h2>Добро пожаловать!</h2>
-    <p>Рада приветствовать вас на своем сайте.</p>
-  </div>
-  <footer>
-    copy&; Тест страница AACC.ml
-  </footer>
-
-  <form action="handler.php">
-   <p><strong>Логин:</strong> 
-    <input maxlength="25" size="40" name="login"></p>
-   <p><strong>Пароль:</strong> 
-    <input type="password" maxlength="25" size="40" name="password"></p>
-  </form>
-
- </body> 
+<head>
+<title>Passworded Page</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<style>
+body {
+color:#585858; 
+font-family:Segoe UI; 
+font-size:12px; 
+background:#F2F2F2;
+}
+p {margin-bottom:0px;}
+#button {text-align:right; border-top:1px solid #E3E3E3; padding-top:10px;}
+#wrapper {position:relative; margin:0px auto; width:550px;}
+#pass-window {
+background:#FFF; 
+border:1px solid #CCC; 
+box-shadow:0px 2px 15px #CCC; 
+padding:10px; z-index:100; 
+position:absolute; 
+margin:0px auto; 
+left:125px; 
+top:90%; 
+width:300px;
+}
+#mask {background:#FFF; 
+opacity:0.8; 
+position:fixed; 
+top:0; left:0; 
+width:100%; 
+height:100%; 
+z-index:0;}
+input[type='text'] {
+border:1px solid #CCC; 
+padding:4px; 
+color:#585858;}
+input[type='button'] {
+background:#F2F2F2; 
+border:1px solid #CCC; 
+padding:3px; 
+padding-left:10px; 
+padding-right:10px; 
+color:#585858; 
+text-shadow:0px 1px 0px #FFF; 
+cursor:pointer;}
+input[type='button']:hover {background:#F9F9F9; border-color:#AAA;}
+h3 {font-size:15px; border-bottom:1px solid #E3E3E3; padding-bottom:5px; font-weight:normal;}
+</style>
+<script>
+function Accept() {
+var pass = document.getElementById('pass').value;
+    win  = document.getElementById('pass-window');
+    mask = document.getElementById('mask');
+if (pass == '0000') { // Указываем правильный пароль
+    win.style.display='none';
+    mask.style.display='none'; 
+} else { alert('Введенный Вами пароль неверен!'); }
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+     <p>Текст</p>
+     <div id="pass-window">
+     <p><h3>Пожалуйста, введите пароль:</h3></p>
+     <p><input id="pass" type="text" /></p>
+     <p id="button"><input type="button" value="Принять" onClick="javascript:Accept();" /></p>
+     </div>
+</div>
+<div id="mask"></div>
+</body>
 </html>
