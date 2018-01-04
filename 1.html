@@ -17,21 +17,15 @@
     <p>Рада приветствовать вас на своем сайте.</p>
   </div>
   <footer>
-    jjjjj
+    copy&; Тест страница AACC.ml
   </footer>
 
-<?php $form = '
-<form method="post">
-<input type="text" name="pass">
-<input type="submit" name="go">
-</form>';
-if(!isset($_POST['go'])) echo $form;
-else {
-if($_POST['pass'] != 'какой то пароль') { //не равен паролю
-echo "Неверно!!! <a href='javascript<b></b>:window.history.back();'>Еще раз</a>";
-}
-else echo "Верный пароль..";
-?>
+  <form action="handler.php">
+   <p><strong>Логин:</strong> 
+    <input maxlength="25" size="40" name="login"></p>
+   <p><strong>Пароль:</strong> 
+    <input type="password" maxlength="25" size="40" name="password"></p>
+  </form>
 
  </body> 
 </html>
