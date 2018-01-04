@@ -19,5 +19,19 @@
   <footer>
     jjjjj
   </footer>
+
+<?php $form = '
+<form method="post">
+<input type="text" name="pass">
+<input type="submit" name="go">
+</form>';
+if(!isset($_POST['go'])) echo $form;
+else {
+if($_POST['pass'] != 'какой то пароль') { //не равен паролю
+echo "Неверно!!! <a href='javascript<b></b>:window.history.back();'>Еще раз</a>";
+}
+else echo "Верный пароль..";
+?>
+
  </body> 
 </html>
