@@ -3,18 +3,147 @@
 <title>Отправка формы на эл.почту</title>
 </head>
 <body>
-<form name="mailex" method="post" ectype="text/plain" 
-action="mailto:ваша_почта">
 
-<p><label for="name2">Your Name: <input type="text" name="name" id="name2"/></label>
-</p>
+<?php
 
-<p><label for="email2">Your E-mail:
-<input type="text" name="email" id="email2"/></label>
-</p>
+// Spectator's Site Search Script
+// (C) Spectator.ru
+// Для работы требуется PHP 4 или выше.
+// Если вы будете использовать этот скрипт, ссылка на Spectator.ru
+// крайне желательна. Спасибо.
 
-<p><input type="submit" name="submit" value="Submit" /></p>
 
+// файл с индексом
+$indexfile="indexfile.txt";
+
+// обрабатываем запрос
+
+$total=0;
+$qu2=str_replace ("+","&",$words);
+
+// убираем заглавные буквы
+$qu2=strtolower ($qu2);
+
+// обрубаем в конце лишние пробелы
+$qu2=chop($qu2);
+
+// убираем двойные пробелы
+while (stristr($qu2," ")) $qu2=str_replace (" "," ",$qu2);
+
+
+echo ('Запрос: '.$qu2);
+echo ('<p><p><p>');
+
+// разбиваем запрос на слова
+$words = explode (' ', $qu2);
+
+// удаляем в запросе все лишнее (знаки препинания, и прочее)
+$qu2=eregi_replace ('[.?,!()#":;|]', '', $qu2);
+
+// проверяем длинну запроса
+if (strlen($qu2)>2):
+
+
+// открываем индекс
+$index=file ($indexfile);
+$num= (count($index)-1);
+
+// для каждой сточки из индекса (одна строчка=один файл) выполняем:
+for ($i=1; $i<$num+2; $i++):
+
+$contents=$index[$i-1];
+
+$wordcount =0;
+$mustfound=1;
+
+// выполняем для каждого их запрошенных слов:
+$mustntfound=1;
+
+for ($q=0; $q<count($words); $q++):
+
+// обработка знаков *, + и -
+
+// знак *
+if (stristr($words[$q], "*")) {$search=str_replace ("*","",$words[$q]); }
+else { $search=" ".$words[$q]." ";}
+
+// если в слове есть звездочка, то убираем звездочку и добавляем в начало
+// и конец слова по пробелу если нет проблелов, то слово будет искаться не
+// целиком, а "вообще", то есть на запрос "чай" будет выводиться и слово
+// "случайный".
+
+// bug: скрипт не учитывает, где в слове стоит звездочка и считает, что в
+// любом случае она стоит в конце (!!)
+
+// знак & (или +)
+if (stristr($search, "&")) {$search=str_replace ("&","",$search); $mustfound++; }
+
+// если стоит знак +, то количество слов, которые _должны_ быть найдены,
+// увеличиваются на 1
+
+// знак -
+if (stristr($search, "-")) {
+    $search=str_replace ("-","",$search);
+    $mustntfound=0; 
+    }
+
+// если стоит знак +, то если слово найдено, весь результат умножается на 0
+// (смотри дальше).
+
+// если слово найдено, считаем его и умножаем на $mustntfound, то есть на 1,
+// если найдено "правильное" слово и на 0, если найдено слово, помеченное
+// знаком -
+
+if (stristr($contents, $search)) {
+    $wordcount++;
+    $wordcount=$wordcount*$mustntfound;
+    }
+
+endfor;
+
+// проверяем, все ли слова, помеченные знаком + найдены,
+// либо (если таких слов нет), найдено ли вообще хоть одно слово
+
+if ($wordcount >= $mustfound):
+
+// находим имя файла, в котором это найдено
+$file=explode ("|",$contents);
+$file=$file[0];
+
+// выводим имя файла, в котором это найдено с ссылкой
+// (этот кусочек вам надо будет переделать под собственные нужды).
+
+$file=str_replace (".txt", "", $file);
+$file=str_replace ("_", ".", $file);
+echo ("<a href=".$file.">".$file."</a><br>");
+
+
+// считаем, колько всего файлов надено
+$total++;
+endif;
+
+// переходим к следующемуу файлу
+endfor;
+
+// выводим результаты
+if ($total!=0) echo ('<br><br>Всего найдено страниц: '.$total);
+else echo ("<b>Ничего не найдено!</b><p>Возможно, вы".
+          ." просто не правильно составили запрос. Как это сделать правильно".
+          ." - смотрите <a href=search>вот здесь</a>.");
+
+else:
+echo ("<br>Слишком короткий запрос!");
+endif;
+
+
+?>
+
+<!-- Форма для поиска: -->
+<form method=get action=search.php>
+<input type=text size=19 name=words value="" maxlength=150>
+<input type=submit class=frm value=Go>
 </form>
+
+
 </body>
 </html>
