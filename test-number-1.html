@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+function searchTextOnPage(inputId) { 
+  var obj = window.document.getElementById(inputId); 
+  var textToFind; 
+  if (obj) { 
+    textToFind = obj.value; 
+  } else { 
+    alert("Немогу найти текст = " + inputId); 
+    return; 
+  } 
+  if (textToFind == "" { 
+    alert("Вы ничего не ввели"; 
+    return; 
+  } 
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/g","<b style='color:red'>"+textToFind+"</b>"; 
+  var obj = window.document.getElementById(inputId); 
+  obj.value = textToFind; 
+} 
+</script> 
+</head> 
+<body> 
+<form> 
+<input type="text" id="text-to-find" value="поиск"> <input type="button" onclick="javascript: searchTextOnPage('text-to-find'); return false;" Value="Найти"/> 
+</form> 
+<p>Hi! This is string!</p> 
+</body> 
+</html> 
