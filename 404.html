@@ -13,6 +13,15 @@ a {
     body { 
     margin: 0; /* Убираем отступы */
    }
+    .parent {
+    margin: 20%; /* Отступы вокруг элемента */
+    background: #fd0; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+   } 
+   .child {
+    border: 3px solid #666; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin: 10px; /* Отступы вокруг */
 </style>
  </head> 
  <body>
@@ -32,7 +41,14 @@ a {
 </nav>
 
 </header>
- <div id="content">
+    <div class="parent">
+   <div class="child">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+    euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+    ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+    ut aliquip ex ea commodo consequat. 
+   </div>
+  </div>
 <h1><strong></strong></h1>
 <p><center><h1>
 Ошибка 404. Страница не найдена ;(</h1></center></p>
@@ -42,6 +58,7 @@ a {
 </center></h3></a></p>
    <center><a href="http://aacc.ml">aacc.ml</a></center>
  </body>
+   </div>
   </div>
   <footer>
     &copy; AACC.ml
